@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.auth.Registration">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:id="@+id/applogo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/extralogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/registertextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/applogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/registerdesctextview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/registerdesc"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:maxLines="4"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintTop_toBottomOf="@id/registertextview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/emailtextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintTop_toBottomOf="@id/registerdesctextview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/registeremail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailhint"
+                android:background="@drawable/layout_roundfieldnotfilled"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:maxLength="100"
+                android:textColorHint="@color/grey"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintTop_toBottomOf="@id/emailtextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/usernametextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintTop_toBottomOf="@id/registeremail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/registerusername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/usernamehint"
+                android:background="@drawable/layout_roundfieldnotfilled"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:maxLength="15"
+                android:textColorHint="@color/grey"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintTop_toBottomOf="@id/usernametextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/loginpasswordtextview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintTop_toBottomOf="@id/registerusername"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/registerpassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:background="@drawable/layout_roundfieldnotfilled"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textColorHint="@color/grey"
+                android:textSize="12sp"
+                android:layout_marginHorizontal="24dp"
+                app:layout_constraintTop_toBottomOf="@id/loginpasswordtextview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/existingaccounttextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="24dp"
+                app:layout_constraintTop_toBottomOf="@id/registerpassword"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/registeraccountbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textSize="12sp"
+                android:paddingStart="40dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="50dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/existingaccounttextview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/termsandconditiontextview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/termsandconditiondesc"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_margin="32dp"
+                app:layout_constraintTop_toBottomOf="@id/registeraccountbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+

@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">FInanceXProject</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="logindesc">Login to our application to access our services
+such as Expense Tracking, Budget Planning, Categorization and More!</string>
+    <string name="registerdesc">Register to our application to access our services such as Expense Tracking, Budget Planning, Categorization and More!</string>
+    <string name="forgotdesc">Make sure that the email is valid in order
+for us to send an email.</string>
+    <string name="verifydesc">We have sent you an email for verification,
+please verify on your email.</string>
+    <string name="termsandconditiondesc">By continuing, you agree to our Terms and Conditions and have read our Privacy Policy.</string>
+
+    <!--Authentication Strings-->
+    <string name="email">Email</string>
+    <string name="emailhint">johndoe@gmail.com</string>
+    <string name="username">Username</string>
+    <string name="usernamehint">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="send">Send</string>
+    <string name="todo">TODO</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="go_back">Go Back</string>
+    <string name="existing_acct">Already have an account?</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="password_min">Password must be at least 6 characters</string>
+    <string name="username_check">Username must be at least 3 characters</string>
+    <string name="login_success">Login successfully!</string>
+    <string name="login_fail">Login failed.</string>
+    <string name="email_notif">Email sent!</string>
+    <string name="create_acct">Register</string>
+    <string name="email_verification_message">Please check your old email. For the verification of the new email.</string>
+
+    <!-- BudgetPlanningFragment Layout Strings -->
+    <string name="budget_planning_title">Budget Planning</string>
+    <string name="budget_set">Budget Set</string>
+    <string name="currency_symbol">₱</string>
+    <string name="total_budget">0.00</string>
+    <string name="for_this_month">Total Budget Planned</string>
+    <string name="overview">Overview</string>
+    <string name="day">Day</string>
+    <string name="user_budget">Php 0</string>
+    <string name="budget">Budget</string>
+    <string name="user_expense">Php 0</string>
+    <string name="expense">Expense</string>
+    <string name="exceeded_budget_message">You\'ve Exceeded For Today\'s Budget!</string>
+    <string name="expensive_costs">Expensive Costs</string>
+
+    <!-- RecyclerView Item Layout Strings -->
+    <string name="expense_name">Expense Name</string>
+    <string name="expense_cost">Expense Cost</string>
+    <string name="date_purchased">Date Purchased</string>
+    <string name="BotNavTitleExp">Expense</string>
+    <string name="BotNavTitleProf">Profile</string>
+    <string name="BotNavTitleSet">Settings</string>
+    <string name="BotTitleNavLogout">Logout</string>
+    <string name="FragExpTitleExp">Expense</string>
+    <string name="FragExpLabelExpName">Expense Name</string>
+    <string name="FragExpLabelCat">Category</string>
+    <string name="FragExpLabelAm">Amount</string>
+    <string name="FragExpLabelDate">Date</string>
+    <string name="FragExpLabelDesc">Description</string>
+    <string name="FragExpBtnTextSubmit">Submit</string>
+    <string name="FragCatLabelCat">Category</string>
+    <string name="FragCatLabelCat2">Your Categories</string>
+    <string name="FragCatLabelCatName">Category Name</string>
+    <string name="MenuHomeOptBgt">Budget</string>
+    <string name="MenuHomeOptExp">Expense</string>
+    <string name="MenuHomeOptCat">Category</string>
+    <string name="FragCatLabelCatDesc">Category Description</string>
+
+    <!-- Registration toast messages -->
+    <string name="reg_success">Registration Successful. Please check your email for verification</string>
+    <string name="reg_409">Username or email already exists!</string>
+    <string name="reg_fail">Registration failed. Please try again.</string>
+    <string name="network_err">Network error: </string>
+
+    <!-- Login toast and error messages -->
+    <string name="invalid_username">Username is required</string>
+    <string name="invalid_password">Password is required</string>
+    <string name="no_user">Username not found</string>
+    <string name="wrong_pass">Wrong Password</string>
+    <string name="not_verified">Please verify your email first to login!</string>
+    <string name="log_fail">Login failed. Please try again.</string>
+
+    <!-- Profile values -->
+    <string name="old_passhint">Old Password</string>
+    <string name="new_passhint">New Password</string>
+    <string name="confirm_passhint">Confirm Password</string>
+
+    <!-- Category values -->
+    <string name="category_add">Category added successfully!</string>
+    <string name="category_edit">Edit Category</string>
+    <string name="category_dupe">Category already exists.</string>
+    <string name="req_field">This field is required.</string>
+    <string name="user_out">User not logged-in!</string>
+    <string name="category_fail">Failed to add category. Please try again!</string>
+    <string name="cat_edit_success">Category edited successfully!</string>
+    <string name="cat_fail_success">Failed to edit category. Please try again!</string>
+    <string name="cat_not_found">Category not found.</string>
+    <string name="cat_add_neterror">Failed to add category due to network error.</string>
+    <string name="cat_fetch_neterror">Failed to fetch categories due to network error or exception.</string>
+    <string name="cat_upt_neterror">Failed to update category due to network error.</string>
+    <string name="cat_fetchdupe_neterror">Failed to fetch categories to check for duplicates.</string>
+    <string name="cat_checkdupe_neterror">Failed to check for duplicate category titles due to network error.</string>
+    <string name="save_txt">SAVE</string>
+    <string name="delete_txt">DELETE</string>
+    <string name="cat_title_short">Category title must be at least 3 characters long.</string>
+    <string name="category_deleted_success">Category deleted successfully.</string>
+    <string name="category_not_found">Category not found.</string>
+    <string name="category_delete_fail">Failed to delete category.</string>
+    <string name="category_delete_neterror">Network error occurred while deleting the category.</string>
+    <string name="cat_title_missing">Category title is missing.</string>
+    <string name="cat_hint">Category Name</string>
+    <string name="vmExpenseReqTypeErr">Invalid request type</string>
+    <string name="frag_exp_exmp_exp_name">Cake</string>
+    <string name="frag_exp_exmp_amount">0.00</string>
+    <string name="frag_exp_exmp_date">1/1/2024</string>
+    <string name="item_exp_ph_date">Date Purchased</string>
+    <string name="item_exp_ph_amount">Expense Cost</string>
+    <string name="item_exp_ph_name">Expense Name</string>
+    <string name="diag_label_exp_title">Edit Expense</string>
+    <string name="add_category_first">Add Category First</string>
+    <string name="frag_exp_hint_desc">Birthday Cake</string>
+
+    <string name="username_too_short">Username Too Short</string>
+    <string name="username_already_exists">Username Already Exists</string>
+    <string name="update_success">Successfully updated the user details</string>
+    <string name="user_not_found">User Was Not Found</string>
+    <string name="update_failed">Failed To Update User Details</string>
+    <string name="update_network_error">A Network Error Occurred While Updating</string>
+    <string name="check_network_error">Please Check Your Internet Connection</string>
+    <string name="details_not_empty">"Please Enter Your Details To Update"</string>
+    <string name="password_not_equal">Password and Confirm Password Is Incorrect</string>
+    <string name="password_incorrect">Incorrect Old Password</string>
+    <string name="image_upload_error">Profile Image Failed To Upload</string>
+    <string name="password_not_matched">Passwords Do Not Match</string>
+
+    <string name="budget_add">Budget Category added successfully!</string>
+    <string name="budget_dupe">Budget Category already exists.</string>
+    <string name="budget_fail">Failed to add budget. Please try again!</string>
+    <string name="budget_deleted">Budget deleted successfully.</string>
+    <string name="budget_delete_fail">Failed to delete budget.</string>
+
+    <string name="budget_update_error">Failed to update budget due to network error or exception.</string>
+    <string name="budget_update_success">Successfully Updated Budget!.</string>
+
+    <string name="budget_delete_success">Successfully Deleted The Budget!.</string>
+    <string name="budget_delete_error">Failed to delete budget due to network error or exception.</string>
+
+    <string name="home_curandval_placeholder">₱ 10,000</string>
+    <string name="home_cat_title_placeholder">Category Title</string>
+    <string name="dialoglist_expname">Expense</string>
+    <string name="dialoglist_expcost">Cost</string>
+    <string name="dialoglist_expdate">Date</string>
+    <string name="dialoglist_expact">Action</string>
+    <string name="set_label_darkmode">Dark Mode</string>
+    <string name="profile_label_userinfo">User Information</string>
+    <string name="profile_label_pass">Password</string>
+    <string name="home_label_reportgen">Report Generation</string>
+    <string name="home_label_meni_budget">Budget</string>
+    <string name="home_label_menu_expenses">Expense</string>
+    <string name="home_label_cat">Category</string>
+    <string name="home_label_expsum">Expense Summary</string>
+</resources>

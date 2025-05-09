@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroundcolor">#180030</color>
+    <color name="buttoncolor">#6929C4</color>
+    <color name="grey">#DADADA</color>
+    <color name="red">#FF0000</color>
+    <color name="itembackgroundcolor">#15192B</color>
+    <color name="green">#04AA6D</color>
+    <color name="extr_color">#8B1CC1</color>
+    <color name="item_homebg_color">#15192B</color>
+    <color name="dashboard_background">#24133A</color> <!-- Soft dark purple -->
+
+</resources>

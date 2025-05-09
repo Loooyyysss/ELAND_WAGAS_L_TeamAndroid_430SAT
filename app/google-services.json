@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012808854159",
+    "project_id": "financex-2025",
+    "storage_bucket": "financex-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012808854159:android:fb81d3700a2f1685509efa",
+        "android_client_info": {
+          "package_name": "com.ecocp.financex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Vwyt3yT_4FptrSLotOyAo7QapFwJgns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012808854159:android:24fd36169d7e013d509efa",
+        "android_client_info": {
+          "package_name": "com.ecocp.financexproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Vwyt3yT_4FptrSLotOyAo7QapFwJgns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

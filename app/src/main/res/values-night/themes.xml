@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ExpenseTrackerAndroid" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/buttoncolor</item>
+        <item name="colorPrimaryVariant">@color/buttoncolor</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/buttoncolor</item>
+        <item name="colorSecondaryVariant">@color/buttoncolor</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Theme.ExpenseTrackerAndroid" parent="Base.Theme.ExpenseTrackerAndroid" />
+</resources>

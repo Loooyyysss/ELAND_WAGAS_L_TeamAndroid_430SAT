@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_background"
+    tools:context=".ui.prof_and_sett.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/profilebackbutton"
+                android:layout_width="44dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginStart="15dp"
+                android:clickable="true"
+                android:src="@drawable/ic_back_24"
+                android:background="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/profilebackbutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/profilebackbutton"
+                tools:layout_editor_absoluteX="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/budgetbgimg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/profile_label_userinfo"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- EMAIL SECTION MOVED HERE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/profileemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundcorners"
+                    android:backgroundTint="#DADADA"
+                    android:hint="@string/emailhint"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:maxLength="100"
+                    android:padding="12dp"
+                    android:textSize="12sp"
+                    android:enabled="false"
+                    android:focusable="false" />
+                <!-- END EMAIL -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/username"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/profileusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundcorners"
+                    android:backgroundTint="#DADADA"
+                    android:hint="@string/usernamehint"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/profile_label_pass"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/profileoldpassword"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_roundfieldnotfilled"
+                    android:hint="@string/old_passhint"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:textSize="12sp"
+                    android:alpha="0.90"/>
+
+                <EditText
+                    android:id="@+id/profilenewpassword"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_roundfieldnotfilled"
+                    android:hint="@string/new_passhint"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="12sp"
+                    android:alpha="0.90" />
+
+                <EditText
+                    android:id="@+id/profileconfirmpassword"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_roundfieldnotfilled"
+                    android:hint="@string/confirm_passhint"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:textSize="12sp"
+                    android:alpha="0.90" />
+
+                <Button
+                    android:id="@+id/profilesubmitbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="90dp"
+                    android:paddingStart="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/FragExpBtnTextSubmit"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</FrameLayout>

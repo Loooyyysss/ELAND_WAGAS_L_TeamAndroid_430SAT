@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    android:weightSum="2">
+
+    <!-- Budget Card -->
+    <LinearLayout
+        android:id="@+id/layoutBudgetCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_brown"
+        android:layout_marginEnd="8dp"
+        android:padding="12dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textBudgetAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textBudgetLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Food Budget"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonAddBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="#9EFFA5"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Expense Card -->
+    <LinearLayout
+        android:id="@+id/layoutExpenseCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_red"
+        android:layout_marginStart="8dp"
+        android:padding="12dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textExpenseAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textExpenseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Food Expense"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonEditExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:backgroundTint="#9EFFA5"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
